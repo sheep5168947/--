@@ -1,0 +1,136 @@
+body {
+    font-family: 'Saira Extra Condensed', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', 'Noto Sans 思源黑體';
+    background-color: cornsilk;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#title {
+    font-size: 60px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./pic/minecraft-shaders-continuum.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.picAndIntroduction {
+    display: flex;
+}
+
+.sidebar {
+    margin: 25px;
+    width: 20%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+}
+
+.main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main a {
+    text-decoration: none;
+    color: red;
+    /* background-color: royalblue; */
+}
+
+.sidebar img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 8px;
+    background-color: rgb(255, 244, 179);
+}
+
+.sidebar a {
+    margin-top: 30px;
+    text-decoration: none;
+    color: gray;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+}
+
+#introduction p {
+    line-height: 2.5;
+}
+
+#introduction img {
+    width: 50px;
+    height: 50px;
+}
+
+.name {
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+.engName {
+    color: red;
+}
+
+.address {
+    color: gray;
+}
+
+#experience {
+    /* height: 100vh; */
+    padding: 20px;
+}
+
+#picSet {
+    /* height: 100vh; */
+    padding: 20px;
+}
+
+#experience div div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#experience p {
+    color: grey;
+    margin: 0px;
+    margin-left: 50px;
+}
+
+#experience span {
+    text-align: right !important;
+    color: gray;
+}
+
+#picSet div div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgSet img {
+    height: 15vw;
+    /* border-radius: 20%; */
+    padding: 20px;
+}
+
+.imgSet {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

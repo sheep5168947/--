@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        上課練習
+    </title>
+</head>
+
+<body style="background-color: rgb(255, 232, 202);">
+    <div>
+        <span>阿潘</span><br>
+        <span>阿昆</span>
+        <hr>
+    </div>
+    <div>
+        <!-- h會自動換行 -->
+        <h1>潘彥霖</h1>
+        <h2>潘彥霖</h2>
+        <h3>潘彥霖</h3>
+        <h4>潘彥霖</h4>
+        <h5>潘彥霖</h5>
+
+        <hr>
+    </div>
+    <div>
+        <h2>使用 p標籤會將上下分開，就不會都擠在一起
+        </h2>
+        <!-- 段落會將上下的部分隔開 -->
+        <h3>這是沒有p的</h3>
+        <span>姓名：潘彥霖</span><br>
+        <span>自我介紹：住在板橋 在高雄讀書</span>
+        <h3>這是有p的</h3>
+        <p>
+            <span>姓名：潘彥霖</span>
+        </p>
+        <p>
+            <span>住在板橋 在高雄讀書</span>
+        </p>
+        <hr>
+    </div>
+    <div>
+        <span style="background-color: chartreuse;">更改背景顏色</span>
+        <hr>
+    </div>
+    <div>
+        <h2>文字設成超連結</h2>
+        <a href="http://youtube.com">YOUTUBE</a>
+        <hr>
+    </div>
+    <div>
+        <h2>放入一張圖片</h2>
+        <img src="./pic/tenor.gif" alt="">
+        <hr>
+    </div>
+    <div>
+        <h2>更改圖片大小</h2>
+        <img src="./pic/tenor.gif" alt="" style="height: 150px;width: 150px;">
+        <hr>
+    </div>
+    <div>
+        <h2>更改照片的邊界以及弧度</h2>
+        <img src="./pic/tenor.gif" alt="" style="height: 150px;width: 150px;border-radius: 60%;border: 1px solid #ddd;padding: 5px;">
+        <hr>
+    </div>
+    <div>
+        <div style="background-color: aqua;padding: 5px;">
+            <p style="background-color: rgb(202, 219, 124);  margin: 5px; border:1px solid rgb(218, 58, 10);">幫段落或是圖片加上margin border padding</p>
+        </div>
+    </div>
+    <hr>
+    <div>
+        <h2>更改父項與子項的style並比較其差異</h2>
+        <p style="color: rgb(45, 47, 192);">我是爸爸我是爸爸我是爸爸我是爸爸我是爸爸 <span style="color: crimson;">我是小孩</span> 我是爸爸我是爸爸我是爸爸我是爸爸我是爸爸</p>
+        <hr>
+    </div>
+    <div>
+        <h2>實作class與id，並比較class與id的差異</h2>
+        <img src="./pic/tenor.gif" alt="" class="dogGif" id="dogGif">
+        <!-- id優先於class -->
+        <style>
+            #dogGif {
+                border-radius: 20%;
+            }
+            
+            .dogGif {
+                border-radius: 50%;
+            }
+        </style>
+        <hr>
+    </div>
+    <div>
+        <h2>新增一個外部連結link並控制圖片</h2>
+        <img src="./pic/tenor.gif" alt="" class="doggie">
+        <!-- 應該要把link放在head這裡為了方便講解放在這 -->
+        <link rel="stylesheet" href="style.css">
+        <hr>
+    </div>
+
+    <div>
+        <h2>display:block</h2>
+        <div>
+            <img src="./pic/tenor.gif" alt="">
+            <img src="./pic/tenor.gif" alt="" style="display: block;">
+            <img src="./pic/tenor.gif" alt="">
+        </div>
+        <h2>display:inline</h2>
+        <div style="display: inline;">
+            <img src="./pic/tenor.gif" alt="">
+            <img src="./pic/tenor.gif" alt="">
+            <img src="./pic/tenor.gif" alt="">
+        </div>
+        <hr>
+    </div>
+    <div>
+        <h2>display:flex，flex-direction:column | row</h2>
+        <div style="display: flex;">
+            <div style="display: flex; flex-direction: column;">
+                <span>column</span>
+                <div style="width: 50px; height: 50px; background-color: red;margin: 5px;"></div>
+                <div style="width: 50px; height: 50px; background-color: red;margin: 5px;"></div>
+                <div style="width: 50px; height: 50px; background-color: red;margin: 5px;"></div>
+            </div>
+            <div style="display: flex; flex-direction: row;margin-left: 50px;">
+                <span>row</span>
+                <div style="width: 50px; height: 50px; background-color: red;margin: 5px;"></div>
+                <div style="width: 50px; height: 50px; background-color: red;margin: 5px;"></div>
+                <div style="width: 50px; height: 50px; background-color: red;margin: 5px;"></div>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+    <div>
+        <h2>display:flex,flex-wrap:wrap | nowrap</h2>
+        <!-- 縮放視窗觀察比較 -->
+        <div>
+            <span>wrap</span>
+
+            <div style="display: flex; flex-wrap: wrap;">
+                <div style="width: 300px; height: 50px; background-color: red;margin: 5px;"></div>
+                <div style="width: 300px; height: 50px; background-color: red;margin: 5px;"></div>
+                <div style="width: 300px; height: 50px; background-color: red;margin: 5px;"></div>
+
+            </div>
+            <span>nowrap</span>
+
+            <div style="display: flex; flex-wrap: nowrap;">
+                <div style="width: 300px; height: 50px; background-color: red;margin: 5px;"></div>
+                <div style="width: 300px; height: 50px; background-color: red;margin: 5px;"></div>
+                <div style="width: 300px; height: 50px; background-color: red;margin: 5px;"></div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div>
+        <h2>置中</h2>
+        <div style="display: flex;">
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px; color: white;">沒有置中</div>
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;display:flex ;justify-content:center;color: white;">水平置中</div>
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;display: flex;align-items: center;color: white;">垂直置中</div>
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;display: flex;align-items: center;justify-content: center;color: white;">置中</div>
+
+        </div>
+        <hr>
+    </div>
+    <div>
+        <h2>display:none vs visibility:hidden</h2>
+        <span>原本的樣子</span>
+        <div style="display: flex;">
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+            <div style="width: 100px; height: 100px; background-color: yellow;margin: 5px;"></div>
+            <div style="width: 100px; height: 100px; background-color: blue;margin: 5px;"></div>
+        </div>
+        <span>display:none</span>
+        <div style="display: flex;">
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+            <div style="width: 100px; height: 100px; background-color: yellow;margin: 5px; display: none;"></div>
+            <div style="width: 100px; height: 100px; background-color: blue;margin: 5px;"></div>
+        </div>
+        <span>visibility:hidden</span>
+        <div style="display: flex;">
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+            <div style="width: 100px; height: 100px; background-color: yellow;margin: 5px;visibility: hidden;"></div>
+            <div style="width: 100px; height: 100px; background-color: blue;margin: 5px;"></div>
+        </div>
+        <hr>
+    </div>
+    <div>
+        <h2>浮動元素:float，文繞圖</h2>
+        <div style="display: flex;">
+            <div style="margin: 5px;">
+                <h3>float:none</h3>
+                <div style="width: 300px; background-color: thistle;">
+                    <img src="./pic/tenor.gif" alt="" style="float: none;"> 這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛
+                </div>
+            </div>
+            <div style="margin: 5px;">
+                <h3>float:left</h3>
+                <div style="width: 300px; background-color: thistle;">
+                    <img src="./pic/tenor.gif" alt="" style="float: left;"> 這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛
+                </div>
+            </div>
+            <div style="margin: 5px;">
+                <h3>float:right</h3>
+                <div style="width: 300px; background-color: thistle;">
+                    <img src="./pic/tenor.gif" alt="" style="float: right;"> 這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛這隻狗狗好可愛
+                </div>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+    <div>
+        <h2>position實作</h2>
+        <h3>position:static</h3>
+        <div style="display: flex;">
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+            <div style="width: 100px; height: 100px; background-color: yellow;margin: 5px; position: static;"></div>
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+        </div>
+        <h3>position:relative 使用top(上)、bottom(下)、left(左)、right(右)控制位置</h3>
+        <div style="display: flex;">
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+            <div style="width: 100px; height: 100px; background-color: yellow;margin: 5px; position: relative;top: 20px;left: 20px;"></div>
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+        </div>
+        <h3>position:absoulute</h3>
+        <div style="display: flex;">
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+            <div style="width: 100px; height: 100px; background-color: yellow;margin: 5px; position: absolute;left: 300px;"></div>
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+        </div>
+        <h3>position:sticky</h3>
+        <div style="display: flex;height: 200px;">
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+            <div style="width: 100px; height: 100px; background-color: yellow;margin: 5px; position: sticky;top: 20px;"></div>
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+        </div>
+        <h3>position:fixed</h3>
+        <div style="display: flex;">
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+            <div style="width: 100px; height: 100px; background-color: yellow;margin: 5px; position: fixed;bottom: 20px;right: 20px;"></div>
+            <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+        </div>
+        <h3>z-index</h3>
+        <div style="display:flex;">
+            <div style="margin: 20px;border: 1px solid black; padding: 5px;">
+                <h4>position:relative</h4>
+                <div style="display: flex;">
+                    <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+                    <div style="width: 100px; height: 100px; background-color: yellow;margin: 5px; position: relative;top: 20px;left: 20px;"></div>
+                    <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+                </div>
+            </div>
+            <div style="margin: 20px;border: 1px solid black; padding: 5px;">
+                <h4>position:relative加上z-index <br> 我想要紅色在黃色上面!</h4>
+                <div style="display: flex;">
+                    <div style="width: 100px; height: 100px; background-color: red;margin: 5px;"></div>
+                    <div style="width: 100px; height: 100px; background-color: yellow;margin: 5px; position: relative;top: 20px;left: 20px;z-index: 1;"></div>
+                    <div style="width: 100px; height: 100px; background-color: red;margin: 5px;z-index: 2;"></div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div>
+        <h2>文字對齊:text_align</h2>
+        <div style="display: flex;">
+            <div style="width: 100px;height: 100px; border: 1px solid black; margin: 2px; text-align: left;">left</div>
+            <div style="width: 100px;height: 100px; border: 1px solid black; margin: 2px; text-align: center;">center</div>
+            <div style="width: 100px;height: 100px; border: 1px solid black; margin: 2px; text-align: right;">right</div>
+            <!-- <div style="width: 100px;height: 100px; border: 1px solid black; margin: 2px; text-align: justify;">justify</div> -->
+        </div>
+        <h2>行高:line-height</h2>
+        <div style="display: flex;">
+            <div style="width: 100px;height: 100px; border: 1px solid black; margin: 2px;">這裡是沒有行高的地方</div>
+            <div style="width: 100px;height: 100px; border: 1px solid black; margin: 2px;line-height:2em;">這裡是有行高的地方</div>
+
+        </div>
+        <hr>
+    </div>
+    <div>
+        <h2>列表:製作一個購買清單</h2>
+        <div style="display: flex;">
+            <div style="margin: 5px;">
+                <span>購買清單(ul,li):</span>
+                <ul>
+                    <li>蘋果</li>
+                    <li>雞蛋</li>
+                    <li>switch遊戲機</li>
+                    <ul>
+                        <li>健身環</li>
+                        <li>動物森友會</li>
+                        <li>魔物獵人rise</li>
+                    </ul>
+
+                </ul>
+            </div>
+            <div style="margin: 5px;">
+                <span>購買清單(ol,li):</span>
+                <ol>
+                    <li>蘋果</li>
+                    <li>雞蛋</li>
+                    <li>switch遊戲機</li>
+                    <ol>
+                        <li>健身環</li>
+                        <li>動物森友會</li>
+                        <li>魔物獵人rise</li>
+                    </ol>
+
+                </ol>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <div>
+        <h2>表格:製作一個表格</h2>
+        <table>
+            <tr>
+                <th>個性</th>
+                <td>大方、外相、好相處</td>
+            </tr>
+            <tr>
+                <th>興趣</th>
+                <td>打遊戲、唱歌、跳舞</td>
+            </tr>
+            <tr>
+                <th>聯絡資訊</th>
+                <td>line id:00000000 <br> 手機號碼:0987654321</td>
+            </tr>
+        </table>
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            
+            td,
+            th {
+                border: 1px solid #eca60e;
+                text-align: left;
+                padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+        <hr>
+    </div>
+    <div>
+        <h2>製作一個按鈕可以跳轉到個人網頁</h2>
+        <a href="./my_introduction.html"><button>前往我的個人網頁~</button></a>
+        <h2>製作一個可以輸入帳號的input</h2>
+        <input type="text" placeholder="輸入帳號">
+        <h2>製作一個可以輸入密碼的input</h2>
+        <input type="password" placeholder="輸入密碼">
+        <h2>製作一個興趣的checkbox</h2>
+        <div>
+            <label for="">打籃球 <input type="checkbox" name="" id=""></label>
+            <label for="">打棒球 <input type="checkbox" name="" id=""></label>
+            <label for="">打桌球 <input type="checkbox" name="" id=""></label>
+            <label for="">打羽球 <input type="checkbox" name="" id=""></label>
+            <label for="">打電動 <input type="checkbox" name="" id=""></label>
+
+        </div>
+        <h2>製作一個生理性別的radio</h2>
+
+        <div>
+            <span>性別：</span>
+            <label for="">男</label>
+            <input type="radio" name="sex" id="">
+            <label for="">女</label>
+            <input type="radio" name="sex" id="">
+
+        </div>
+        <h2>製作一個選擇年齡的input</h2>
+        <input type="number" name="" id="" value="6">
+        <h2>製作一個選擇身高的下拉選單</h2>
+        <select name="" id="">
+            <option value="">選擇自己的身高</option>
+            <option value="">110公分以下</option>
+            <option value="">111~120公分</option>
+            <option value="">121~130公分</option>
+            <option value="">131~140公分</option>
+            <option value="">141~150公分</option>
+            <option value="">151~160公分</option>
+            <option value="">161~170公分</option>
+            <option value="">171公分以上</option>
+        </select>
+    </div>
+    <hr>
+</body>
+
+</html>
